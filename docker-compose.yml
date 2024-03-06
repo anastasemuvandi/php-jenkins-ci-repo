@@ -1,0 +1,9 @@
+version: '1'
+services:
+  php_service:
+    build: .
+    ports:
+      - "8080:80"
+    volumes:
+      - "./src:/var/www/html/"
+  
